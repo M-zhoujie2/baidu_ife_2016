@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <title>任务十三:零基础JavaScript编码(一)</title>
+</head>
+<body>
+    <label>
+        请输入北京今天空气质量:
+        <input id="api-input" type="text">
+    </label>
+    <button id="button">确认填写</button>
+
+    <div>
+        您输入的值是:<span id="api-display">尚无录入</span>
+    </div>
+    <script type="text/javascript">
+        var api_input = document.getElementById('api-input');
+        var button = document.getElementById('button');
+        var api_display =document.getElementById('api-display');
+        button.onclick  = function()
+        {
+            api_display.innerHTML = api_input.value;
+        }
+    </script>
+</body>
+</html>
