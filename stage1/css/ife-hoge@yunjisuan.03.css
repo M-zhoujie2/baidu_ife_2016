@@ -1,0 +1,57 @@
+/*整体布局*/
+*{padding: 0;margin: 0;font-family: "Microsoft YaHei";}
+div{
+    border: 2px solid #999;
+    padding: 20px;margin: 20px;
+}
+.main
+{
+    height: 800px;
+    background-color: #eee;
+    position: relative;
+}
+/*团队logo*/
+.main-logo
+{
+    width: 200px;
+    float: left;
+    text-align: center;
+}
+.main-logo img
+{
+    display: block;
+    width: 160px;
+    margin: 20px;
+}
+/*团队介绍*/
+.main-content
+{
+    position: absolute;
+    left: 280px;
+    right: 180px;
+}
+.main-content p
+{
+    line-height: 30px;
+    text-indent: 2em;
+}
+/*团队成员*/
+.main-photo
+{
+    width: 120px;
+    position: absolute;
+    right: 0;
+}
+.main-photo img
+{
+    display: block;
+    width: 80px;
+    height: 80px;
+    margin: 20px;
+}
+
+@media screen and (max-width: 900px){
+    .main{
+        width: 850px;
+    }
+}
