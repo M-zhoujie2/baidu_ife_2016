@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <title>任务十四:零基础JavaScript编码(二)</title>
+</head>
+<body>
+   <h3>污染城市列表</h3>
+   <ul id = "api-list">
+   </ul>
+    <script type="text/javascript">
+        var apiData = [
+            ["北京",90],
+            ["上海",50],
+            ["福州",10],
+            ["广州",50],
+            ["成都",90],
+            ["西安",100]
+        ];
+        var apiList = document.getElementById('api-list');
+        var i = 0;
+        var list = "";
+        for (;apiData[i];)
+        {
+            if (apiData[i][1] > 60) {
+                list += "<li>"+apiData[i]+"</li>";
+            }
+            ++i;
+        }
+        apiList.innerHTML = list;
+    </script>
+</body>
+</html>
